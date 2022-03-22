@@ -12,6 +12,7 @@ class LoginService{
       User user = result.user;
       await db.collection("Users").doc(user.uid).set({
         "name" : "Anonymous",
+        "dateCreated" : DateTime.now(),
       });
       
       return user;

@@ -1,6 +1,6 @@
 {
-    "name": "run_tracker",
-    "short_name": "run_tracker",
+    "name": "run_keeper",
+    "short_name": "run_keeper",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:run_tracker/components/app_button_card.dart';
-import 'package:run_tracker/constants/constants.dart';
-import 'package:run_tracker/pages/login/login_controller.dart';
+import 'package:run_keeper/components/app_button_card.dart';
+import 'package:run_keeper/constants/constants.dart';
+import 'package:run_keeper/pages/login/login_controller.dart';
 
 class LoginPage extends StatelessWidget {
   LoginPage({ Key key }) : super(key: key);
 
-  final LoginController logCon = Get.put(LoginController());
+  final LoginController logCon = Get.find();
 
   @override
   Widget build(BuildContext context) {

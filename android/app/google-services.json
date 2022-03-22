@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "671668483948",
+    "project_id": "run-keeper-fb30e",
+    "storage_bucket": "run-keeper-fb30e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:671668483948:android:84fc2527420e93c6c32549",
+        "android_client_info": {
+          "package_name": "com.project.run_keeper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "671668483948-6klqb6c61nsjrm0hgkjdi83llmj0k2k3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSLIVx_BXwP72N1Qhy-tPfdFpjIXD5hiw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "671668483948-6klqb6c61nsjrm0hgkjdi83llmj0k2k3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,7 +1,7 @@
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-class RunDatamodel{
+class RunDataModel{
   String id;
   String title;
   double distance;
@@ -9,7 +9,7 @@ class RunDatamodel{
   DateTime startDate;
   DateTime endDate;
 
-  RunDatamodel(String id, Map<String, dynamic> data){
+  RunDataModel(String id, Map<String, dynamic> data){
     this.id = id;
     this.title = data['title'] ?? "";
     this.distance = data['distance'] ?? 0.0;

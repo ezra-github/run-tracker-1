@@ -1,4 +1,4 @@
-package com.example.run_tracker
+package com.example.run_keeper
 
 import io.flutter.embedding.android.FlutterActivity
 

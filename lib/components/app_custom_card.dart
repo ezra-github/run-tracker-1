@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:run_tracker/constants/constants.dart';
+import 'package:run_keeper/constants/constants.dart';
 
 class CustomCard extends StatelessWidget {
   const CustomCard({ 
@@ -87,7 +87,7 @@ class CustomCard extends StatelessWidget {
                   ),
                   SizedBox(height: 5,),
                   Text(
-                    distance.toString() + "km",
+                    distance.toString() + " km",
                     style: CustomTextStyle.subHeader(textcolor: CustomTheme.colorDisabled, textsize: 12.0),
                   ),
                   SizedBox(height: 5,),

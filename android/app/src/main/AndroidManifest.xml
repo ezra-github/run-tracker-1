@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.run_tracker">
+    package="com.example.run_keeper">
    <application
-        android:label="run_tracker"
+        android:label="run_keeper"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

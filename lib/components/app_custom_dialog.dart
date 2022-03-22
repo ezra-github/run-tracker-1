@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_cupertino_date_picker/flutter_cupertino_date_picker.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
-import 'package:run_tracker/constants/constants.dart';
-import 'package:run_tracker/pages/home/home_controller.dart';
+import 'package:run_keeper/constants/constants.dart';
+import 'package:run_keeper/pages/home/home_controller.dart';
 
 import 'app_button_card.dart';
 import 'app_text_field.dart';
@@ -50,7 +50,7 @@ class CustomDialog{
                   child: AppTextField(
                     controller: startDateController,
                     hintText: "Start",
-                    onTap: () => homCon.selectStartDateAndEndDate(context),
+                    onTap: () => homCon.selectStartDateAndEndDate(context, true),
                   ),
                 ),
                 SizedBox(width: 20,),
@@ -58,7 +58,7 @@ class CustomDialog{
                   child: AppTextField(
                     controller: endDateController,
                     hintText: "End",
-                    onTap: () => homCon.selectStartDateAndEndDate(context),
+                    onTap: () => homCon.selectStartDateAndEndDate(context,false),
                   ),
                 ),
               ],
@@ -84,11 +84,35 @@ class CustomDialog{
     Get.defaultDialog(
       title: CustomText.removeData,
       titleStyle: CustomTextStyle.header(textcolor: CustomTheme.colorPrimary),
-      content: Column(
-        children: [
-          Text(CustomText.removeContent),
-          
-        ],
+      content: Container(
+        margin: EdgeInsets.only(left: 10, right: 10),
+        child: Column(
+          children: [
+            Text(
+              CustomText.removeContent,
+              textAlign: TextAlign.center,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                TextButton(
+                  onPressed: onTapNo, 
+                  child: Text(
+                    "No",
+                    style: CustomTextStyle.primary(textcolor: CustomTheme.colorDisabled),
+                  ),
+                ),
+                TextButton(
+                  onPressed: onTapYes, 
+                  child: Text(
+                    "Yes",
+                    style: CustomTextStyle.primary(),
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
       )
     );
     // var alertDialog = AlertDialog(

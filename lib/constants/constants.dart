@@ -16,7 +16,9 @@ class CustomText {
   static String newRecord = "New Record";
   static String editRecord = "Edit Record";
   static String removeData = "Remove Data";
-  static String removeContent = "'Are you sure you want to remove this data?'";
+  static String removeContent = "Are you sure you want to remove this data?";
+  static String dialogYes = "Confirm";
+  static String dialogNo = "No";
 }
 
 

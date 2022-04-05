@@ -1,5 +1,7 @@
 # run_keeper
 
+Flutter version: 2.0.5
+
 A new Flutter project.
 
 ## Getting Started
